@@ -23,8 +23,6 @@ class PostsController < ApplicationController
   def post_params
     params.permit(:title, :category, :content)
   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> d85d464d6b515afaaea77da93c980592f7c02744
+
+
