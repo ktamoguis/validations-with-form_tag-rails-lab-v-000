@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     binding.pry
     @post = Post.find(params[:id])
     binding.pry
-    if @post.valid?
+    if @post.update(post_params)
       @post.update(post_params)
       redirect_to post_path(@post)
     else
