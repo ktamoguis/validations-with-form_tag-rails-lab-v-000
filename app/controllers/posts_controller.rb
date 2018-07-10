@@ -24,5 +24,3 @@ class PostsController < ApplicationController
     params.permit(:title, :category, :content)
   end
 end
-
-
