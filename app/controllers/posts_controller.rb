@@ -9,10 +9,10 @@ class PostsController < ApplicationController
 
   def update
     binding.pry
-    @post = Post.find(params[:id])
+    #@post = Post.find(params[:id])
     binding.pry
     if @post.update(post_params)
-      @post.update(post_params)
+      #@post.update(post_params)
       redirect_to post_path(@post)
     else
       binding.pry
