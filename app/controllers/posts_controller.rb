@@ -8,7 +8,6 @@ class PostsController < ApplicationController
   end
 
   def update
-    binding.pry
     #@post = Post.find(params[:id])
     binding.pry
     if @post.update(post_params)
